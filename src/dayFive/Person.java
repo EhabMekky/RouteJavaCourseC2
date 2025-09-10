@@ -24,6 +24,19 @@ public class Person {
         this.gender = gender;
     }
 
+    public void print()
+    {
+        System.out.println("Hello, I'm " + name + " I'm " + age + " years old");
+    }
+
+    public void prints()
+    {
+        System.out.println("Hello, I'm " + name + " I'm " + age + " years old " + "my gender is " + gender);
+    }
+
+
+    //        System.out.println("Hello, i'm " + p3.name + " ,I'm " + p3.age + " years old");
+
     /*
     Interactive Activity
 Ask them to design a Car class:
