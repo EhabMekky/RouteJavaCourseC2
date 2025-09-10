@@ -46,8 +46,13 @@ public class Main {
 //        double result = account.getBalance();
 //        System.out.println(result);
 
-        Student s = new Student();
-        s.setGrade(-1);
-        System.out.println(s.getGrade());
+//        Student s = new Student();
+//        s.setGrade(-1);
+//        System.out.println(s.getGrade());
+
+
+        Dog dog = new Dog();
+        dog.eat(); // inherited method
+        dog.bark(); // dog's own method
     }
 }
