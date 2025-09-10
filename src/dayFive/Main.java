@@ -1,0 +1,28 @@
+package dayFive;
+
+public class Main {
+    static void main(String[] args) {
+//        Route route = new Route();
+//        String course = route.course;
+//        String name = route.name;
+
+        //System.out.println(name + " teach " + course);
+
+//        Route rConstructor = new Route("Route","Java");
+//        System.out.println(rConstructor.name + " teaches " + rConstructor.course);
+
+        Person d = new Person();
+        System.out.println(d);
+
+        Person p1 = new Person("Nourhan", 18);
+        Person p2 = new Person("Hazem", 20);
+        Person p3 = new Person("Salwa", 19);
+
+        System.out.println("Hello, i'm " + p1.name + " ,I'm " + p1.age + " years old");
+        System.out.println("Hello, i'm " + p2.name + " ,I'm " + p2.age + " years old");
+        System.out.println("Hello, i'm " + p3.name + " ,I'm " + p3.age + " years old");
+
+        Person p4 = new Person("Ehab", 26, 'M');
+        System.out.println("Hello, i'm " + p4.name + " ,I'm " + p4.age + " years old" + " my gender is " + p4.gender);
+    }
+}
