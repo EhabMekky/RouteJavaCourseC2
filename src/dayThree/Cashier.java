@@ -3,7 +3,7 @@ package dayThree;
 import java.util.Scanner;
 
 public class Cashier {
-    static void main() {
+    public static void main(String[] args) {
         //get the of items
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of items: ");

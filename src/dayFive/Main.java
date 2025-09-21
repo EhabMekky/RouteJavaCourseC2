@@ -1,7 +1,7 @@
 package dayFive;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 //        Route route = new Route();
 //        String course = route.course;
 //        String name = route.name;

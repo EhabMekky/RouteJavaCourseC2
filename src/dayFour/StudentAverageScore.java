@@ -3,7 +3,7 @@ package dayFour;
 import java.util.Scanner;
 
 public class StudentAverageScore {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         int numberOfStudents = 3;
         int numberOfCourses = 4;
 

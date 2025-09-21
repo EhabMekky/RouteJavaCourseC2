@@ -3,7 +3,7 @@ package daySix;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 //        System.out.println(Month.getMonth("POL"));
 //        System.out.println(Month.getMonth(13));
 

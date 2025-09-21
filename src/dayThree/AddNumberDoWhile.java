@@ -3,7 +3,7 @@ package dayThree;
 import java.util.Scanner;
 
 public class AddNumberDoWhile {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean again = false;
 

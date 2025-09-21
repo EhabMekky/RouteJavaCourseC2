@@ -1,7 +1,7 @@
 package dayFour;
 
 public class Main {
-    static void main(String[] args) {
+   public static void main(String[] args) {
 
         //double area = Rectangle.getArea(3.5,9); //result 3.5*9
         //System.out.println(area);
