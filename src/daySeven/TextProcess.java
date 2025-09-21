@@ -1,17 +1,8 @@
 package daySeven;
 
-import java.util.Arrays;
-
-public class Main {
+public class TextProcess {
     public static void main(String[] args) {
-
-        int[] ticket = LotteryTicketUpdate.generateTicketNumbers();
-        LotteryTicketUpdate.printTicket(ticket);
-        Arrays.sort(ticket);
-        System.out.print("Sorted Tickets:");
-        LotteryTicketUpdate.printTicket(ticket);
-
-        //        String s =  "Hello World";
+//        String s =  "Hello World";
 //        System.out.println(s);
 //        System.out.println(s.length());
 //
@@ -35,7 +26,7 @@ public class Main {
 //        System.out.println(text.charAt(5));
 //        System.out.println(text.indexOf('e')); // first occurrence
 //        System.out.println(text.lastIndexOf('e')); // last occurrence
-        // countWords("I Love Route Academy");
+       // countWords("I Love Route Academy");
 //        reverseString("Eslam Ahmed Hazem");
 
         String s1 = "          Route";
@@ -44,21 +35,25 @@ public class Main {
 
 
     // method => count the number of words in a text
-    public static void countWords(String text) {
-        String[] words = text.split(" ");
+    public static void countWords(String text)
+    {
+        String [] words = text.split(" ");
         int numberOfWords = words.length;
         String message = String.format("Your text contains %d words", numberOfWords);
         System.out.println(message);
-        for (int i = 0; i < words.length; i++) {
+        for(int i =0;i<words.length; i++)
+        {
             System.out.println(words[i]);
         }
     }
 
-    public static void reverseString(String text) {
+    public static void reverseString(String text)
+    {
         String reversedString = "";
-        for (int i = text.length() - 1; i >= 0; i--) {
-            reversedString = reversedString + text.charAt(i);
-        }
+       for(int i = text.length()-1;i>=0;i--)
+       {
+          reversedString = reversedString + text.charAt(i);
+       }
         System.out.println(reversedString);
     }
 }
