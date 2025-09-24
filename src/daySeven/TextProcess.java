@@ -29,9 +29,25 @@ public class TextProcess {
        // countWords("I Love Route Academy");
 //        reverseString("Eslam Ahmed Hazem");
 
-        String s1 = "          Route";
-        System.out.println(s1.trim());
+//        String s1 = "          Route";
+//        System.out.println(s1.trim());
+
+//        StringBuilder builder = new StringBuilder("Hello");
+//        System.out.println(builder);
+//        builder.append("World");
+//        System.out.println(builder);
+//        builder.insert(5,":(");
+//        System.out.println(builder);
+//        builder.delete(0,5);
+//        System.out.println(builder);
+//        builder.reverse();
+//        System.out.println(builder);
+//        builder.replace(0,5,"Java");
+//        System.out.println(builder);
+        addSpace2("ILoveRouteAcademyAndJava");
     }
+
+
 
 
     // method => count the number of words in a text
@@ -56,4 +72,39 @@ public class TextProcess {
        }
         System.out.println(reversedString);
     }
+
+    public static void addSpace(String text)
+    {
+
+       StringBuilder modifiedText = new StringBuilder(text);
+        for(int i=1;i<modifiedText.length();i++)
+        {
+            if(Character.isUpperCase(modifiedText.charAt(i)))
+            {
+                modifiedText.insert(i, " ");
+                i++;
+            }
+        }
+        System.out.println(modifiedText);
+    }
+
+    public static void addSpace2(String text)
+    {
+        StringBuilder modifiedText = new StringBuilder();
+        for(int i=0;i<text.length();i++)
+        {
+
+            char ch = text.charAt(i);
+            if(Character.isUpperCase(ch) && i>0)
+            {
+                modifiedText.append(" ");
+            }
+            modifiedText.append(ch);
+        }
+        System.out.println(modifiedText);
+    }
+
+    //Stash changes => save changes without committing them to the local repository
+    // pop => apply the stashed changes and remove them from the stash list
+    // apply => apply the stashed changes but keep them in the stash list
 }
